@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#2f1500", "surface-container-highest": "#d5e3fc", "on-secondary-fixed-variant": "#3f465c", "on-error-container": "#93000a", "outline-variant": "#c4c5d5", "surface-container": "#e6eeff", "inverse-surface": "#233144", "on-primary-fixed": "#001453", "on-primary-fixed-variant": "#173bab", "secondary": "#565e74", "on-error": "#ffffff", "secondary-fixed-dim": "#bec6e0", "on-tertiary-container": "#ffa85d", "tertiary-container": "#743d00", "on-secondary-fixed": "#131b2e", "on-surface-variant": "#444653", "surface-container-low": "#eff4ff", "tertiary-fixed": "#ffdcc3", "surface-variant": "#d5e3fc", "on-background": "#0d1c2e", "primary-container": "#1e40af", "outline": "#757684", "on-surface": "#0d1c2e", "inverse-primary": "#b8c4ff", "error-container": "#ffdad6", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-bright": "#f8f9ff", "surface-container-high": "#dce9ff", "secondary-container": "#dae2fd", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "secondary-fixed": "#dae2fd", "inverse-on-surface": "#eaf1ff", "primary-fixed": "#dde1ff", "surface-dim": "#ccdbf3", "primary": "#00288e", "primary-fixed-dim": "#b8c4ff", "on-primary-container": "#a8b8ff", "surface-tint": "#3755c3", "background": "#f8f9ff", "on-tertiary-fixed-variant": "#6e3900", "surface": "#f8f9ff", "tertiary-fixed-dim": "#ffb77d", "error": "#ba1a1a", "on-secondary-container": "#5c647a", "tertiary": "#532a00" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "margin-lg": "2rem", "space-2xl": "2rem", "space-xxs": "0.125rem", "margin-md": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "1rem", "space-md": "0.75rem", "space-lg": "1rem", "space-xl": "1.5rem", "gutter-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "code-sm": ["Inter"], "label-sm": ["Inter"] }, "fontSize": { "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between border-r border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/20 bg-surface-bright"><img alt="Logo TJKT Inventory" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VTqSK2KNbSNUWZQ_R_NP7hK_7o8S8UQs4ugtDd94lv0IhqU8dk4bsT2GcOGNyTMIE7999PtJX6zFPer8rizxdaFz-sLxlMGm3CEqI-YkJ8lA2GTyouOOyH899UJ8T9wynpyX6lMXihEywDVHGiLlpMumOojWKkM1MqaiuRKRIgb-1u8hpZOewb1Rypk8gL4vDdTtNzEzVMhQ-Z_YaQ0Glvh720PZKQ76LXhe6z_KeYDw"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight text-primary font-bold leading-tight">SIM-LAB</span><span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase">SMK TJKT</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Sistem Manajemen Lab & Aset</span></div></div><div class="px-space-lg py-space-sm bg-surface-container-low border-b border-outline-variant/20 flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px] text-primary">calendar_month</span>T.A. 2024/2025</span><span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Semester Genap</span></div><nav class="flex flex-col gap-space-xs p-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-lab" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><div class="flex flex-col"><span class="font-body-md text-body-md font-medium leading-none">Dashboard Lab</span><span class="font-label-sm text-label-sm text-on-surface-variant/80 mt-space-xxs">KPI & utilitas rak instan</span></div></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="katalog-aset" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><div class="flex flex-col"><span class="font-body-md text-body-md font-medium leading-none">Katalog & Aset TJKT</span><span class="font-label-sm text-label-sm text-on-surface-variant/80 mt-space-xxs">Perangkat, rak, tools & barcode</span></div></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="sirkulasi-peminjaman" href="#"><span class="material-symbols-outlined text-[20px]">swap_horiz</span><div class="flex flex-col"><span class="font-body-md text-body-md font-medium leading-none">Sirkulasi & Scan QR</span><span class="font-label-sm text-label-sm text-on-surface-variant/80 mt-space-xxs">Check-out/in & booking siswa</span></div></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pemeliharaan-stok" href="#"><span class="material-symbols-outlined text-[20px]">build_circle</span><div class="flex flex-col"><span class="font-body-md text-body-md font-medium leading-none">Pemeliharaan & Stok</span><span class="font-label-sm text-label-sm text-on-surface-variant/80 mt-space-xxs">Tiket servis & bahan habis pakai</span></div></a></nav></div><div class="p-space-md border-t border-outline-variant/20 bg-surface-bright"><div class="p-space-sm rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-emerald-600 inline-block animate-pulse"></span>Status Lab</span><span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container-highest px-space-xs rounded">RACK-01</span></div><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><span>Jaringan Online:</span><span class="font-semibold text-on-surface">48 Nodes Aktif</span></div><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><span>Suhu Ruang Server:</span><span class="font-semibold text-on-surface">21°C Normal</span></div></div><div class="mt-space-sm flex items-center justify-between text-on-surface-variant px-space-xs"><span class="font-label-sm text-label-sm">SIM-LAB Enterprise TJKT</span><span class="font-code-sm text-code-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface">v2.4</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/20 shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg border border-outline-variant/40 bg-surface-bright text-on-surface"><span class="material-symbols-outlined text-[18px] text-primary">dns</span><span class="font-body-md text-body-md font-medium">Lab Jaringan & Server Utama - Gedung B Lt. 2</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">arrow_drop_down</span></div><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-outline pointer-events-none">search</span><input class="w-full h-9 pl-8 pr-12 rounded border border-outline-variant/40 bg-surface text-on-surface placeholder:text-outline text-body-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Cari aset, SN, MAC, atau barcode..." type="text"/><span class="absolute right-space-sm px-space-xs py-0.5 bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm rounded border border-outline-variant/30">Ctrl+K</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs h-9 px-space-md rounded bg-primary-container text-on-primary font-body-md text-body-md font-medium hover:bg-primary transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">qr_code_scanner</span><span>Scan QR / Peminjaman Cepat</span></button><div class="relative flex items-center"><button class="w-9 h-9 flex items-center justify-center rounded border border-outline-variant/40 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute -top-1 -right-1 px-1.5 py-0.2 rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold shadow-sm">3</span></div><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfQdIDNeOdWljmxFHE5UCZrh4MvE84vLKMJt-Evu17cBKIzx9Huj2A9ZCO2lSuzsJiZYuvGd6RDDpm3j91MLqyXMm3Cpg75HwJhc1Kq9GMizoO2vA-MhoP_iL009LCnL407vxUBtDz5xKFu7FbjcN73uzE2KqGAPTzFpKWJF7spUN4Dz7ULT-t1Du7pT5UXXi8lN3JQsK2-Tw0P7G-HqjfxpsXVAIwrZZGOTfCQT2m"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Budi Santoso, S.Kom</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-space-xxs">Toolman & Kepala Lab TJKT</span></div></div></div></header><main class="w-full pt-16 bg-background px-space-lg py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Operational Context Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-code-sm text-code-sm uppercase tracking-wider">SMK-TJKT / MOD-04</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-500"></span> Modul Akreditasi & Preservasi Sarpras
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">
+        Pemeliharaan Alat, Kontrol Bahan Habis Pakai & Pelaporan Akreditasi
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Audit berkala kondisi perangkat aktif/pasif fiber & routing, monitoring ambang batas material praktik, serta legalitas BAST penghapusan aset.
+      </p>
+</div>
+<!-- Quick Action Shelf -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="h-9 px-space-md rounded bg-primary-container text-on-primary font-body-md text-body-md font-semibold hover:bg-primary shadow-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Buat Tiket Perbaikan Baru</span>
+</button>
+<button class="h-9 px-space-md rounded bg-surface-container-high text-on-surface font-body-md text-body-md font-medium hover:bg-surface-container-highest transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">add_shopping_cart</span>
+<span>+ Masuk Bahan Baru</span>
+</button>
+<button class="h-9 px-space-md rounded bg-surface-container-high text-on-surface font-body-md text-body-md font-medium hover:bg-surface-container-highest transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-amber-600">assignment_late</span>
+<span>Cetak BAST Kerusakan</span>
+</button>
+<button class="h-9 px-space-md rounded bg-surface-container-high text-on-surface font-body-md text-body-md font-medium hover:bg-surface-container-highest transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Ekspor PDF/Excel</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics Strip -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Stok Material Kritis</span>
+<span class="font-headline-xl text-headline-xl font-bold text-amber-700">2 Item</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Di bawah buffer minimum</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center text-amber-600">
+<span class="material-symbols-outlined text-[28px]">warning_amber</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tiket Servis Berjalan</span>
+<span class="font-headline-xl text-headline-xl font-bold text-primary">3 Tiket</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 Rekanan luar, 2 Internal Lab</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">handyman</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimasi Biaya Servis</span>
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">Rp 450.000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Realisasi Anggaran Lab Q4</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">payments</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kesiapan Alat Praktik</span>
+<span class="font-headline-xl text-headline-xl font-bold text-emerald-700">94.2%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kategori Laik Pakai (Standar BSNP)</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-700">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+</div>
+</div>
+<!-- BAGIAN 1: Manajemen Bahan Habis Pakai (Consumables Inventory & Low Stock Alert) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-6 bg-primary rounded-sm inline-block"></span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">
+          Manajemen Bahan Habis Pakai (Consumables Inventory & Low Stock Alert)
+        </h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-code-sm text-code-sm">GUDANG-B02</span>
+</div>
+<!-- Otomatisasi log banner -->
+<div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-high text-on-surface text-body-sm shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">history_toggle_off</span>
+<span class="font-medium">Otomasi Log:</span>
+<span class="text-on-surface-variant">Digunakan 40 pcs RJ45 oleh Praktik XI TJKT 1 kemarin (Instruktur: Pak Anton)</span>
+</div>
+</div>
+<!-- Grid Kartu Bahan Habis Pakai Praktik TJKT -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Card 1: Kabel UTP Cat6 Belden -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded bg-amber-100 text-amber-900 font-label-sm text-label-sm font-semibold">
+              Mendekati Minimum
+            </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">KAT-CAB-01</span>
+</div>
+<div class="mt-space-xs">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface leading-snug">Kabel UTP Cat6 Belden Original</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Spesifikasi 1000Base-T 24AWG Solid Copper</p>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-amber-800">120</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Meter / Sisa 1 Roll</span>
+</div>
+<!-- Progress bar -->
+<div class="flex flex-col gap-1 mt-space-xs">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-amber-500 h-full rounded-full" style="width: 39%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-amber-800 font-medium">Ambang Batas Minimum: 150m</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lokasi: Rak C3-Gudang</span>
+<button class="px-space-sm py-1 rounded bg-amber-600 text-on-primary font-label-md text-label-md hover:bg-amber-700 transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+<span>Restok</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Konektor RJ45 CommScope -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded bg-red-100 text-red-900 font-label-sm text-label-sm font-semibold animate-pulse">
+              STOK KRITIS - Sisa 8%
+            </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">CON-RJ-04</span>
+</div>
+<div class="mt-space-xs">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface leading-snug">Konektor RJ45 Cat5e/6 CommScope</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pin Gold Plated 50u 8P8C Modplug</p>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-red-700">42</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Pcs (dari 500 Pcs)</span>
+</div>
+<!-- Progress bar -->
+<div class="flex flex-col gap-1 mt-space-xs">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-red-600 h-full rounded-full" style="width: 8.4%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-red-800 font-medium">Batas Minimum: 100 Pcs (Darurat)</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Laci Toolman A1</span>
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">shopping_bag</span>
+<span>PO Cepat</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Protection Sleeve Fiber Optic -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold">
+              Stok Aman
+            </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">FO-SLV-60</span>
+</div>
+<div class="mt-space-xs">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface leading-snug">Protection Sleeve FO 60mm</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Heat Shrinkable Tube Baja Penguat</p>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-emerald-800">350</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Pcs (Ready Splicing)</span>
+</div>
+<!-- Progress bar -->
+<div class="flex flex-col gap-1 mt-space-xs">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full rounded-full" style="width: 78%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Batas Minimum: 100 Pcs</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kotak Fiber Lt. 2</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Detail</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Pigtail & Patchcord SC/UPC -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold">
+              Stok Aman
+            </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">FO-PC-SCU</span>
+</div>
+<div class="mt-space-xs">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface leading-snug">Pigtail & Patchcord SC/UPC Fiber</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Simplex Singlemode 9/125um G.652D 3m</p>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-emerald-800">24</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Pcs Siap Praktik FTTH</span>
+</div>
+<!-- Progress bar -->
+<div class="flex flex-col gap-1 mt-space-xs">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full rounded-full" style="width: 60%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Batas Minimum: 12 Pcs</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Koper Kit FTTH-B</span>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Detail</span>
+</button>
+</div>
+</div>
+<!-- Card 5: Roset & OTB Wallmount 8 Core -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded bg-amber-100 text-amber-900 font-label-sm text-label-sm font-semibold">
+              Peringatan
+            </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">OTB-WM-08</span>
+</div>
+<div class="mt-space-xs">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface leading-snug">Roset & OTB Wallmount 8 Core</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Indoor Terminal Box lengkap adapter plate</p>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold text-amber-800">6</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Unit Tersisa</span>
+</div>
+<!-- Progress bar -->
+<div class="flex flex-col gap-1 mt-space-xs">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-amber-500 h-full rounded-full" style="width: 30%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-amber-800 font-medium">Batas Minimum: 8 Unit</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lemari Pasif Rak-04</span>
+<button class="px-space-sm py-1 rounded bg-amber-600 text-on-primary font-label-md text-label-md hover:bg-amber-700 transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+<span>Restok</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- BAGIAN 2: Papan Status Tiket Kerusakan & Servis (Maintenance Tickets) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-6 bg-primary rounded-sm inline-block"></span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">
+          Papan Status Tiket Kerusakan & Servis (Maintenance Tickets)
+        </h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-code-sm text-code-sm">LIVE QUEUE</span>
+</div>
+<!-- Filter Controls -->
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-sm">Semua Tiket (3)</button>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md">Vendor Luar (1)</button>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md">Perbaikan Internal (2)</button>
+</div>
+</div>
+</div>
+<!-- Technical Table Panel -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">No. Tiket & Perangkat</th>
+<th class="py-space-sm px-space-md">Deskripsi Gejala Kerusakan</th>
+<th class="py-space-sm px-space-md">Pelapor & Lampiran</th>
+<th class="py-space-sm px-space-md">Status Penanganan</th>
+<th class="py-space-sm px-space-md">Biaya / Estimasi</th>
+<th class="py-space-sm px-space-md text-right">Tindakan</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-md text-body-md">
+<!-- Tiket 1: Cisco Catalyst 2960 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm font-bold text-primary">#MNT-2024-031</span>
+<span class="px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 font-label-sm text-label-sm font-semibold">Prioritas Tinggi</span>
+</div>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface mt-1">Switch Cisco Catalyst 2960-24TT-L</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span>SN: FCW2149L08Z</span>
+<span>•</span>
+<span>RACK-LAB-01 [Slot U14]</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top max-w-xs">
+<p class="text-on-surface font-medium">Port 12 & 14 Mati Total / Konsleting Tegangan Rendah</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Lampu LED link oranye berkedip sinkron saat patchcord ditancapkan. Bau hangus terdeteksi pada blok port PHY setelah petir.
+                </p>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">account_circle</span>
+<span class="font-medium text-on-surface">Guru Budi Santoso</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">08 Nov 2024, 09:15 WIB</span>
+<!-- Lampiran foto kerusakan tersemat -->
+<div class="mt-space-xxs flex items-center gap-space-xs p-1.5 rounded bg-surface-container-high w-fit cursor-pointer hover:bg-surface-container-highest transition-colors">
+<img class="w-7 h-7 rounded object-cover" data-alt="Close-up photograph of a metallic Cisco Catalyst network switch RJ45 port bay showing subtle scorch marks on ports 12 and 14 inside a clean vocational high school server rack environment under focused laboratory lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoaTEo3aj-ly9yj6WAw80hw1_UHKE52phYePDBXIpnGvG-d2d3x7W39uBIlTWyFWrrwvmv4NKH7cA2P86JwJxwpQkRzvmhX6kCL0DxoXf2LW4iYffBwD_8sgeZzKvtKldIT0gLAECjG8fuc0cKb1HBRQbv-3zwIwV3BfaO1GJ2wR5fK2ydhNGq-gEOPGUzvyk9j2y1vgTe5iwBwcQ6PSvbVHV9TYbPq0htWb1qGQs3"/>
+<div class="flex flex-col pr-1">
+<span class="font-label-sm text-label-sm font-semibold text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">photo_camera</span> Foto-Fisik-Port.jpg
+                      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1.4 MB • Lampiran Pelapor</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="px-space-xs py-1 rounded bg-amber-50 text-amber-900 font-label-md text-label-md font-semibold flex items-center gap-1 w-fit">
+<span class="material-symbols-outlined text-[16px] text-amber-600">precision_manufacturing</span>
+                    Sedang Diperbaiki di Vendor Rekanan
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                    Mitra: <strong class="text-on-surface">PT Mitra Solusi Jaringan</strong>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimasi selesai: 16 Nov 2024</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-bold text-on-surface">Rp 450.000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Penggantian IC PHY & Fuse</span>
+<span class="mt-1 px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm w-fit">Disetujui Kepsek</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1.5 rounded hover:bg-surface-container-high text-primary" title="Update Status Tiket" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_square</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant" title="Cetak SPK Servis Vendor" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Tiket 2: Tang Crimping Tool KNIPEX -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm font-bold text-primary">#MNT-2024-029</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm font-medium">Prioritas Sedang</span>
+</div>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface mt-1">Tang Crimping Tool Modular KNIPEX 97 51 10</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span>SN: KNP-TOOL-08</span>
+<span>•</span>
+<span>TOOLKIT-SISWA-03</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top max-w-xs">
+<p class="text-on-surface font-medium">Pisau Potong Tumpul & Gagang Ratchet Longgar</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Kabel terpotong tidak rata menyebabkan crimping pin 1 & 8 gagal kontinu. Ratchet mekanisme penahan selip.
+                </p>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">engineering</span>
+<span class="font-medium text-on-surface">Agus Riyadi (Toolman)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">05 Nov 2024, 14:00 WIB</span>
+<div class="mt-space-xxs flex items-center gap-space-xs p-1.5 rounded bg-surface-container-high w-fit cursor-pointer hover:bg-surface-container-highest transition-colors">
+<img class="w-7 h-7 rounded object-cover" data-alt="High precision German engineering crimping tool showing cutting blade mechanism resting on a clean white workshop workbench next to network cables." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJM33_XsG6ooZEZrseuqAQnjxPnqMFJtO3SghrutOi3RwRqKb4aloGxnCQKhcj4GjL8ctiUyZiS1X1rqjuPUNAZsndSJNUfamHVTgtrqCFfXTtoNOhGd4diSh_p94Ih1C-ekdxv_ZdiTnwgH3OXTCtlIM7BaPmwp41HQQDORSP6U5G49ThBd7gLHia5s3jsZrisvZHX84WVByAzT6nmB49Cu1OV2Rs8vpv3kl6bKon"/>
+<div class="flex flex-col pr-1">
+<span class="font-label-sm text-label-sm font-semibold text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">attachment</span> Blade-Inspection.jpg
+                      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">890 KB • Foto Pisau</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="px-space-xs py-1 rounded bg-emerald-100 text-emerald-900 font-label-md text-label-md font-semibold flex items-center gap-1 w-fit">
+<span class="material-symbols-outlined text-[16px] text-emerald-700">task_alt</span>
+                    Siap Verifikasi / Selesai
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                    Penanganan: <strong class="text-on-surface">Asah mata pisau + Kalibrasi Ratchet</strong>
+</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-medium">Uji Coba Pinset: OK 100%</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-bold text-on-surface">Rp 0 (Internal)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Perawatan Rutin Toolman</span>
+<span class="mt-1 px-space-xs py-0.5 rounded bg-emerald-50 text-emerald-800 font-label-sm text-label-sm w-fit">Selesai Dikerjakan</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Tutup Tiket</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Tiket 3: Optical Power Meter (OPM) DVP -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm font-bold text-primary">#MNT-2024-028</span>
+<span class="px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 font-label-sm text-label-sm font-semibold">Prioritas Tinggi</span>
+</div>
+<span class="font-headline-md text-headline-md font-semibold text-on-surface mt-1">Optical Power Meter (OPM) DVP Optoelectronic</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span>SN: DVP-OPM-9921</span>
+<span>•</span>
+<span>FIBER-LAB-BOX-A</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top max-w-xs">
+<p class="text-on-surface font-medium">Layar Monokrom LCD Bergaris & Angka dBm Tidak Terbaca</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Alat tertimpa saat praktikum penyambungan core. Sensor detektor InGaAs masih merespons cahaya laser 1310/1550nm secara internal.
+                </p>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">account_circle</span>
+<span class="font-medium text-on-surface">Guru Rini Rahmawati</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">02 Nov 2024, 11:30 WIB</span>
+<div class="mt-space-xxs flex items-center gap-space-xs p-1.5 rounded bg-surface-container-high w-fit cursor-pointer hover:bg-surface-container-highest transition-colors">
+<img class="w-7 h-7 rounded object-cover" data-alt="Optical Power Meter fiber optic testing device showing damaged vertical lines across the green monochrome LCD display on an electronics workbench." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJWfv0v8DO2w5kIf3I8KRyL5HSqulItVg08pqjNCGTTJ-8s-oXy0T_UU33esqOoRSvSL6g4hl1FED33eD3xnOBDXLUMqquN0_f6zhPHL-CiZXzorcW2a_wxAf6gou8OLMFMQphHFqdloIrFlwbn8tpxeYe2aOAXelOa_D3nirp175lzrpKg9j8uYO4BsrosCjjJ9qX1R7U9N1CBumWHCZPnt7NVRi7-a99V9Zgt50D"/>
+<div class="flex flex-col pr-1">
+<span class="font-label-sm text-label-sm font-semibold text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">broken_image</span> Rusak-LCD-OPM.jpg
+                      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2.1 MB • Foto Display</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="px-space-xs py-1 rounded bg-amber-100 text-amber-900 font-label-md text-label-md font-semibold flex items-center gap-1 w-fit">
+<span class="material-symbols-outlined text-[16px] text-amber-700">hourglass_top</span>
+                    Menunggu Penggantian Sparepart
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                    Sparepart: <strong class="text-on-surface">Panel LCD 128x64 STN Backlight</strong>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Proses pengiriman e-Katalog LKPP</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm font-bold text-on-surface">Rp 175.000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Biaya Komponen Modul Layar</span>
+<span class="mt-1 px-space-xs py-0.5 rounded bg-amber-50 text-amber-800 font-label-sm text-label-sm w-fit">Menunggu Kurir</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1.5 rounded hover:bg-surface-container-high text-primary" title="Lacak Pengiriman Sparepart" type="button">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant" title="Detail Perbaikan" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Information Strip -->
+<div class="bg-surface-container-low px-space-md py-space-xs flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-2">
+<span>Menampilkan 3 tiket aktif dari total 38 riwayat pemeliharaan tahun 2024</span>
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span> 1 Selesai
+          </span>
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span> 2 Sedang Diproses
+          </span>
+<a class="text-primary font-semibold hover:underline flex items-center gap-0.5" href="#">
+            Arsip Tiket Lama <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- BAGIAN 3: Pelaporan Resmi & Berita Acara Kerusakan (BAST) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-6 bg-primary rounded-sm inline-block"></span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">
+        Pelaporan Resmi & Berita Acara Kerusakan / Penghapusan Aset
+      </h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-code-sm text-code-sm">STANDAR AKREDITASI</span>
+</div>
+<!-- Dual Column: Document Preview Card + Metadata Approval Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Document Preview Panel (Paper Form Style) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<!-- Official Document Watermark Background Accents -->
+<div class="absolute -right-12 -top-12 opacity-5 pointer-events-none select-none text-primary">
+<span class="material-symbols-outlined text-[240px]">inventory_2</span>
+</div>
+<div class="flex flex-col gap-space-md relative z-10">
+<!-- Kop Surat Resmi SMK -->
+<div class="flex items-center gap-space-md pb-space-sm bg-surface-bright p-space-md rounded-lg">
+<img class="w-14 h-14 object-contain" data-alt="Official round Indonesian vocational school crest emblem badge with gold and deep royal navy tones on a white circular frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ1dwLcjNpCTA5QcAc-l4_Faa3Vp5UxHjVympzeGcv5wVzsir18giEXB4ivH3Eqs_bT-5PW7Y-PQKovzNr1ZH8dt4jMtR8vKqGSb1oUSkL9URG0JBpwby5s9SKcOZjsd0Pw-Xq7IZVb5jL2L40dKHUW7lfdB13rUMOMLH5tusHzrMa_Il_p9HvhoowWtuZh2J6RSMm0JHfxqwfslJhLZco5qCJbI8xwe3T_5XQiS2_"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm tracking-widest text-on-surface-variant uppercase font-semibold">Pemerintah Provinsi - Dinas Pendidikan & Kebudayaan</span>
+<h3 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">SMK NEGERI 1 TEKNOLOGI INFORMATIKA JAKARTA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-none mt-0.5">Program Keahlian: Teknik Jaringan Komputer & Telekomunikasi (TJKT)</p>
+<span class="font-code-sm text-code-sm text-on-surface-variant mt-1">Jl. Telekomunikasi Terpadu No. 42 | NPSN: 20109923 | Terakreditasi A (Unggul)</span>
+</div>
+</div>
+<!-- Document Identifier Header -->
+<div class="flex flex-col items-center justify-center text-center my-space-xs">
+<h4 class="font-headline-md text-headline-md font-bold text-on-surface uppercase tracking-wide underline underline-offset-4">
+              BERITA ACARA PEMERIKSAAN KERUSAKAN & USULAN PENGHAPUSAN BARANG
+            </h4>
+<span class="font-code-sm text-code-sm font-semibold text-primary mt-1">
+              NOMOR DOKUMEN: BAST/SMK-TJKT/XI/2024
+            </span>
+</div>
+<!-- Statement Body -->
+<p class="font-body-md text-body-md text-on-surface leading-relaxed text-justify">
+            Pada hari ini, <strong>Senin tanggal Sebelas bulan November tahun Dua Ribu Dua Puluh Empat</strong>, bertempat di Laboratorium Jaringan & Fiber Optik Lantai 2, tim teknis sarana prasarana TJKT telah melakukan verifikasi fisik dan diagnosis teknis mendalam terhadap peralatan laboratorium berikut ini:
+          </p>
+<!-- Table of Damaged Hardware in BAST -->
+<div class="bg-surface-container-low rounded-lg p-space-sm overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-1 px-2">No</th>
+<th class="py-1 px-2">Nama Barang / Aset</th>
+<th class="py-1 px-2">Kode / SN</th>
+<th class="py-1 px-2">Tahun Perolehan</th>
+<th class="py-1 px-2">Kondisi Fisik</th>
+<th class="py-1 px-2">Rekomendasi Teknis</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-on-surface">
+<tr>
+<td class="py-2 px-2 font-mono">01</td>
+<td class="py-2 px-2 font-semibold">Router MikroTik Cloud Core CCR1009-7G-1C</td>
+<td class="py-2 px-2 font-code-sm text-code-sm">CCR-8890-TI</td>
+<td class="py-2 px-2">2018</td>
+<td class="py-2 px-2 text-red-700 font-semibold">Rusak Berat (Mobo Konslet)</td>
+<td class="py-2 px-2 text-on-surface-variant">Afkir / Penggantian Aset</td>
+</tr>
+<tr>
+<td class="py-2 px-2 font-mono">02</td>
+<td class="py-2 px-2 font-semibold">Fusion Splicer Fiber Fox Mini 4S (Unit Pemotong)</td>
+<td class="py-2 px-2 font-code-sm text-code-sm">FFX-2019-91</td>
+<td class="py-2 px-2">2019</td>
+<td class="py-2 px-2 text-red-700 font-semibold">Rusak Berat (Motor V-Groove Macet)</td>
+<td class="py-2 px-2 text-on-surface-variant">Biaya servis melebihi 70% harga baru</td>
+</tr>
+<tr>
+<td class="py-2 px-2 font-mono">03</td>
+<td class="py-2 px-2 font-semibold">Uninterruptible Power Supply (UPS) ICA 1200VA</td>
+<td class="py-2 px-2 font-code-sm text-code-sm">UPS-ICA-411</td>
+<td class="py-2 px-2">2017</td>
+<td class="py-2 px-2 text-red-700 font-semibold">Baterai Korosi Asam & Inverter Terbakar</td>
+<td class="py-2 px-2 text-on-surface-variant">Dihapus demi keselamatan Lab</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            Kesimpulan: Peralatan tersebut di atas dinyatakan <strong>Tidak Ekonomis untuk Diperbaiki</strong> dan membahayakan suplai daya laboratorium jika dipaksakan aktif. Berita acara ini disusun sebagai prasyarat administratif akreditasi dan audit Badan Keuangan Aset Daerah (BKAD).
+          </p>
+<!-- Formal Signature Tri-Column (Kaprodi, Toolman, Kepala Sekolah) -->
+<div class="grid grid-cols-3 gap-space-md pt-space-md mt-space-sm text-center">
+<!-- Toolman Lab -->
+<div class="flex flex-col items-center justify-between h-36">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pemeriksa Teknis / Toolman,</span>
+<div class="relative py-1">
+<span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> TTE TERVERIFIKASI
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">BSrE Sertifikat ID: 890123</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-bold text-on-surface underline">Agus Riyadi, A.Md.T</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIP. 19880412 201502 1 003</span>
+</div>
+</div>
+<!-- Kepala Program Keahlian (Kaprodi TJKT) -->
+<div class="flex flex-col items-center justify-between h-36">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kepala Program Keahlian TJKT,</span>
+<div class="relative py-1">
+<span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> TTE TERVERIFIKASI
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">BSrE Sertifikat ID: 771249</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-bold text-on-surface underline">Budi Santoso, S.Kom, M.T.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIP. 19790815 200501 1 008</span>
+</div>
+</div>
+<!-- Kepala Sekolah -->
+<div class="flex flex-col items-center justify-between h-36">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mengetahui, Kepala SMKN 1 Jakarta</span>
+<div class="relative py-1">
+<span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> TTE TERVERIFIKASI
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">BSrE Sertifikat ID: 554310</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-bold text-on-surface underline">Drs. H. Hendra Wijaya, M.Pd.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIP. 19681120 199303 1 005</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Strip Bottom of Preview -->
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between bg-surface-container-low -mx-space-xl -mb-space-xl px-space-xl py-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary">security</span>
+<span class="font-label-sm text-label-sm">Integritas Dokumen Digital SHA-256 Terenkripsi • Siap Akreditasi BAN-PDM</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-9 px-space-md rounded bg-surface-container-high text-on-surface font-body-md text-body-md font-semibold hover:bg-surface-container-highest transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Preview Lengkap</span>
+</button>
+<button class="h-9 px-space-md rounded bg-primary-container text-on-primary font-body-md text-body-md font-semibold hover:bg-primary transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Unduh Template BAST Siap Cetak (PDF)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Document Metadata, Audit Log & Approval Tracker -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Document Check & Status Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Legalitas & Dokumen</span>
+<span class="px-space-xs py-0.5 rounded bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-bold uppercase">Sah & Lengkap</span>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="flex justify-between py-1 bg-surface-container-low px-space-sm rounded">
+<span class="text-on-surface-variant">Status Registrasi Aset:</span>
+<span class="font-semibold text-on-surface">Disetujui Disdik</span>
+</div>
+<div class="flex justify-between py-1 px-space-sm">
+<span class="text-on-surface-variant">Tahun Buku / Anggaran:</span>
+<span class="font-code-sm text-code-sm font-semibold">2024 / Semester Genap</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low px-space-sm rounded">
+<span class="text-on-surface-variant">Klausul Pemusnahan:</span>
+<span class="font-semibold text-on-surface">Lelang Suku Cadang SMKN</span>
+</div>
+<div class="flex justify-between py-1 px-space-sm">
+<span class="text-on-surface-variant">Standar Instrumen:</span>
+<span class="font-semibold text-primary">Instrumen Akreditasi Butir 14</span>
+</div>
+</div>
+<!-- Direct Action QR Stamp -->
+<div class="p-space-md rounded-lg bg-surface-bright flex items-center gap-space-md">
+<div class="p-1 bg-surface-container-lowest rounded shadow-sm">
+<!-- Inline QR Stamp SVG representation -->
+<svg class="w-16 h-16 text-primary" fill="currentColor" viewbox="0 0 100 100">
+<rect height="30" rx="4" width="30" x="0" y="0"></rect>
+<rect fill="white" height="18" width="18" x="6" y="6"></rect>
+<rect height="10" width="10" x="10" y="10"></rect>
+<rect height="30" rx="4" width="30" x="70" y="0"></rect>
+<rect fill="white" height="18" width="18" x="76" y="6"></rect>
+<rect height="10" width="10" x="80" y="10"></rect>
+<rect height="30" rx="4" width="30" x="0" y="70"></rect>
+<rect fill="white" height="18" width="18" x="6" y="76"></rect>
+<rect height="10" width="10" x="10" y="80"></rect>
+<rect height="20" width="10" x="40" y="10"></rect>
+<rect height="20" width="20" x="40" y="40"></rect>
+<rect height="10" width="10" x="70" y="40"></rect>
+<rect height="20" width="10" x="40" y="70"></rect>
+<rect height="10" width="30" x="60" y="70"></rect>
+<rect height="10" width="10" x="80" y="85"></rect>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Validasi Cepat e-Arsip</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Pindai QR ini untuk verifikasi keaslian tanda tangan digital pada server SIM-LAB Provinsi.</p>
+</div>
+</div>
+</div>
+<!-- Quick Maintenance Guide for Lab Teachers -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<h4 class="font-label-md text-label-md font-bold uppercase">SOP Perawatan Berkala TJKT</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Peralatan aktif (Switch Core, OLT, Splicer) wajib dibersihkan dari debu statis setiap hari Jumat ke-4. Bahan habis pakai yang melewati ambang batas kuning wajib diajukan dalam formulir restok sebelum minggu ke-2 tiap bulan.
+          </p>
+<div class="flex items-center justify-between pt-space-xs text-primary font-semibold font-body-sm text-body-sm">
+<a class="hover:underline flex items-center gap-1" href="#">
+<span>Buka Dokumen SOP Lab TJKT</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="text-on-surface-variant font-code-sm text-code-sm">REV-2024.1</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main></div></body></html>
